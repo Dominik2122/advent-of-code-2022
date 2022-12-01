@@ -3,7 +3,6 @@ with open("./data.txt") as f:
 
 
 def sort_most_calories():
-    most_calories = 0
     current_elf_load = 0
     elves_load = lines.split('\n')
     elves_load_added = []
@@ -16,5 +15,6 @@ def sort_most_calories():
     return sorted(elves_load_added)
 
 
-print(sort_most_calories()[-1])
-print(sort_most_calories()[-1] + sort_most_calories()[-2] + sort_most_calories()[-3])
+sorted_elf_load = sort_most_calories()
+print(sorted_elf_load[-1])
+print(sorted_elf_load[-1] + sorted_elf_load[-2] + sorted_elf_load[-3])
